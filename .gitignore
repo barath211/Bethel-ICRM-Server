@@ -1,2 +1,7 @@
-node_modules
+# Node modules
+node_modules/
+
+# dotenv environment variable file
 .env
+
+# Other patterns can be added here as needed
