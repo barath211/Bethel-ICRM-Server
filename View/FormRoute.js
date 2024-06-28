@@ -10,9 +10,13 @@ import {
 
 export const FormRoutes = express.Router();
 
+//POST
+FormRoutes.post("/FindUser", FindUser);
 FormRoutes.post("/CreateFamilyMember/:AURTHOR", CreateFamilyMember);
+
+// GET
 FormRoutes.get("/ReadFamilyMembers/:PrimaryMobile", ReadFamilyMembers);
 FormRoutes.get("/ReadAllFamilyMembers", ReadAllFamilyMembers);
-FormRoutes.post("/FindUser", FindUser);
 FormRoutes.get("/BaptismMembers", BaptismMembers);
 FormRoutes.get("/NonBaptismMembers", NonBaptismMembers);
+
